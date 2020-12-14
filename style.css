@@ -5,16 +5,20 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #333;
+    background: url('https://i.pinimg.com/originals/d9/53/f0/d953f00e555f7d5a628603e9bbe35f71.jpg') no-repeat center center/cover; 
     color: #fff;
     line-height: 1.6;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     /*css smoth scroll*/
+    scroll-snap-type: y mandatory;
 }
 
 .navbar {
@@ -31,7 +35,7 @@ body {
     display: flex;
     list-style: none;
     width: 100%;
-    justify-content: center;
+    justify-content: left;
 }
 
 .navbar ul li {
@@ -57,13 +61,38 @@ section {
     text-align: center;
     width: 100%;
     height: 100vh;
-
+    scroll-snap-align: center;
 }
 
 section h1 {
     font-size: 4rem;
+    opacity: 1;
 }
 
 section p {
     font-size: 1.5rem;
+}
+
+
+
+section#home {
+    background: url('https://clutchpoints.com/wp-content/uploads/2020/10/way-too-early-2021-nba-title-favorites.png') no-repeat center center/cover; 
+}
+section#atlantic {
+    background: url('https://sircharlesincharge.com/wp-content/uploads/getty-images/2020/03/1203588512.jpeg') no-repeat center center/cover; 
+}
+section#central {
+    background: url('https://cdn.insidesport.co/wp-content/uploads/2020/11/29192734/medium_2020-10-29-764e6c4248.jpg') no-repeat center center/cover; 
+}
+section#southeast {
+    background: url('https://images1.miaminewtimes.com/imager/u/original/11767385/jimmy_butler_miami_heat_1_.jpg') no-repeat center center/cover; 
+}
+section#pacific {
+    background: url('https://sportshub.cbsistatic.com/i/r/2020/01/24/8e55ea12-f73c-4bf1-b8ea-729bbc71b1bc/thumbnail/1200x675/7761f5aad80bcc0756f6a6702dc01aed/lebron.jpg') no-repeat center center/cover; 
+}
+section#southwest {
+    background: url('https://images1.phoenixnewtimes.com/imager/u/745xauto/10921756/booker-2.jpg') no-repeat center center/cover; 
+}
+section#northwest {
+    background: url('https://img.bleacherreport.net/img/images/photos/002/876/311/hi-res-b50fac36b983f0e9cfac21323fec5911_crop_north.jpg?1399137350&w=3072&h=2048') no-repeat center center/cover; 
 }
